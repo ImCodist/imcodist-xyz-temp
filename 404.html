@@ -1,0 +1,91 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Metadata -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- External CSS -->
+    <link rel="stylesheet" href="/css/external/modern-normalize.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="/css/base.css">
+    
+    <!-- Page CSS -->
+    <link rel="stylesheet" href="/css/pages/index.css">
+    
+
+    <!-- Initialize variables for Javascript to use. -->
+    <script>
+        birthday = "";
+    </script>
+
+    <!-- External Javascript -->
+    <script src="/js/external/jquery.js"></script>
+    <!-- Javascript -->
+    <script src="/js/base.js"></script>
+    
+
+    <!-- Head Tags -->
+    <title>imcodist.xyz</title>
+</head>
+<body>
+    <div id="main_container">
+        <div id="content_container">
+            <script>
+    function changeNavTooltip(tooltip) {
+        $("#nav_tooltip_text").html(tooltip);
+    }
+</script>
+
+<div class="container" id="nav_container">
+    <div id="container_content">
+        <!-- Nav buttons. -->
+        
+            <a href="/" class="nav_button" id="nav_button_home" title="Home">
+                <img src="/assets/images/nav/home.png" alt="home">
+            </a>
+            <script>
+                $("#nav_button_home").hover(function() {
+                    changeNavTooltip("Home");
+                }, function() {
+                    changeNavTooltip("");
+                });
+            </script>
+        
+            <a href="/me" class="nav_button" id="nav_button_me" title="Me">
+                <img src="/assets/images/nav/me.png" alt="me">
+            </a>
+            <script>
+                $("#nav_button_me").hover(function() {
+                    changeNavTooltip("Me");
+                }, function() {
+                    changeNavTooltip("");
+                });
+            </script>
+        
+
+        <div id="nav_seperator"></div>
+
+        <!-- The tooltip for the nav buttons. -->
+        <div id="nav_tooltip">
+            <div id="nav_tooltip_text"></div>
+        </div>
+    </div>
+</div>
+            
+            
+<div class="container" id="talent_container">
+    <div id="container_header">
+        <div id="title">404</div>
+        <div id="buttons"></div>
+    </div>
+    <div id="container_content">
+        This page does not exist.<br>
+        <a href="/">> Escape</a>
+    </div>
+</div>
+        </div>
+    </div>
+</body>
+</html>
