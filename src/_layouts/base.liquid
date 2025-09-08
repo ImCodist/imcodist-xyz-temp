@@ -1,0 +1,46 @@
+---
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Metadata -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- External CSS -->
+    <link rel="stylesheet" href="/css/external/modern-normalize.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="/css/base.css">
+    {% if css %}
+    <!-- Page CSS -->
+    <link rel="stylesheet" href="/css/pages/{{ css }}">
+    {% endif %}
+
+    <!-- Initialize variables for Javascript to use. -->
+    <script>
+        birthday = "{{me.birthday}}";
+    </script>
+
+    <!-- External Javascript -->
+    <script src="/js/external/jquery.js"></script>
+    <!-- Javascript -->
+    <script src="/js/base.js"></script>
+    {% if js %}
+    <!-- Page Javascript -->
+    <script src="/js/pages/{{ js }}"></script>
+    {% endif %}
+
+    <!-- Head Tags -->
+    <title>imcodist.xyz</title>
+</head>
+<body>
+    <div id="main_container">
+        <div id="content_container">
+            {% include "nav.liquid" %}
+            
+            {{ content }}
+        </div>
+    </div>
+</body>
+</html>

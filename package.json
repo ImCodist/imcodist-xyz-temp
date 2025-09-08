@@ -1,0 +1,28 @@
+{
+  "name": "imcodist-xyz-temp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "npx eleventy",
+    "serve": "npx eleventy --serve",
+    "debug": "DEBUG=* npx eleventy",
+
+    "build-ghpages": "npx @11ty/eleventy --pathprefix=/imcodist-xyz-temp/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ImCodist/imcodist-xyz-temp.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/ImCodist/imcodist-xyz-temp/issues"
+  },
+  "homepage": "https://github.com/ImCodist/imcodist-xyz-temp#readme",
+  "dependencies": {
+    "@11ty/eleventy": "^3.1.2"
+  }
+}

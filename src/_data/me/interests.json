@@ -1,0 +1,88 @@
+[
+    {
+        "id": "games",
+        "name": "Video Games",
+        "interests": [
+            {
+                "id": "deltarune",
+                "href": "https://deltarune.com/",
+                "width": 1,
+                "height": 1,
+                "bg_animated": true,
+                "layers": 2
+            },
+            {
+                "id": "supermario",
+                "href": "https://mario.nintendo.com/",
+                "width": 1,
+                "height": 1,
+                "bg_animated": true,
+                "layers": 1
+            },
+            {
+                "id": "minecraft",
+                "href": "https://www.minecraft.net/",
+                "width": 2,
+                "height": 1,
+                "layers": 1
+            },
+            {
+                "id": "fnf",
+                "href": "https://www.newgrounds.com/portal/view/770371",
+                "width": 4,
+                "height": 1,
+                "bg_animated": true,
+                "layers": 1
+            },
+            {
+                "id": "undertale",
+                "href": "https://undertale.com/",
+                "width": 3,
+                "height": 1,
+                "layers": 2
+            },
+            {
+                "id": "celeste",
+                "href": "https://www.celestegame.com/",
+                "width": 3,
+                "height": 1,
+                "bg_animated": true,
+                "layers": 1
+            },
+            {
+                "id": "tf2",
+                "href": "https://www.teamfortress.com/",
+                "width": 4,
+                "height": 1,
+                "layers": 1
+            },
+            {
+                "id": "roblox",
+                "href": "https://www.roblox.com/",
+                "width": 4,
+                "height": 1,
+                "layers": 1
+            },
+            {
+                "id": "isaac",
+                "href": "https://store.steampowered.com/app/570660/The_Binding_of_Isaac_Afterbirth/",
+                "width": 4,
+                "height": 1,
+                "layers": 1
+            }
+        ]
+    },
+    {
+        "id": "misc",
+        "name": "Miscellaneous",
+        "interests": [
+            {
+                "id": "homestuck",
+                "href": "https://homestuck.com/",
+                "width": 4,
+                "height": 1,
+                "layers": 1
+            }
+        ]
+    }
+]

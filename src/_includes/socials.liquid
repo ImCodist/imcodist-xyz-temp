@@ -1,0 +1,38 @@
+<div class="container" id="socials_container" name="socials">
+    <div id="container_header">
+        <div id="title">Socials {% if socials_show_unimportant != false %}(All){% endif %}</div>
+        <div id="buttons"></div>
+    </div>
+
+    <div id="container_content">
+        <!-- Nav buttons. -->
+        {% for social in me.socials %}
+            {% assign social_id = social[0] %}
+            {% assign social_data = social[1] %}
+
+            {% if not social_data.hidden %}
+                {% if social_data.important != false or socials_show_unimportant != false %}
+                    <a {% if social_data.href %}href="{{ social_data.href }}"{% endif %} class="socials_button" id="socials_button_{{ social_id }}">
+                        <img src="/assets/images/icons/socials/{{ social_data.icon }}.png" alt="{{ social_data.name }}" title="{{ social_data.name }}{% if social_data.copy %} (Copy){% endif %}">
+                    </a>
+                    {% if social_data.copy %}
+                        <script>
+                            $("#socials_button_{{ social_id }}").click(function() {
+                                copyToClipboard(
+                                    "{{ social_data.copy }}",
+                                    "{{ social_data.copy_message }}"
+                                );
+                            });
+                        </script>
+                    {% endif %}
+                {% endif %}
+            {% endif %}
+        {% endfor %}
+
+        {% if socials_show_unimportant == false %}
+            <a href="/me#socials" class="socials_button"">
+                <img src="/assets/images/icons/socials/more.png" alt="More..." title="More...">
+            </a>
+        {% endif %}
+    </div>
+</div>

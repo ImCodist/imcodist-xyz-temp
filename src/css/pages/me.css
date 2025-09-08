@@ -1,0 +1,205 @@
+#icon_header {
+    display: flex;
+    align-items: center;
+}
+#icon_header img {
+    margin-right: 8px;
+}
+
+
+#icon_header a img {
+    margin-right: 0px;
+    margin-left: 8px;
+}
+
+
+/* Talent container. */
+#talent {
+    width: 100%;
+}
+
+
+#talent_container #intro {
+    margin-bottom: 20px;
+}
+
+
+#talent_images {
+    display: flex;
+    justify-content: space-around;
+}
+
+#talent_images img {
+    height: 200px;
+}
+
+
+/* Me 2 container */
+#me_again_container #container_content {
+    max-width: 470px;
+}
+
+#me_again_container #container_content p:first-of-type {
+    margin-top: 0px;
+}
+#me_again_container #container_content p:last-of-type {
+    margin-bottom: 0px;
+}
+
+#me_again_container #container_content #gunglefuss {
+    margin-right: 20px;
+    margin-bottom: 20px;
+
+    height: 120px;
+
+    float: left;
+}
+
+
+/* Interests. */
+#interests_container #container_content {
+    max-width: 525px;
+}
+
+
+#interests_container #container_content #intro {
+    margin-bottom: 20px;
+}
+
+#interests_container #container_content #outro {
+    margin-top: 10px;
+}
+
+
+#interests_container #interest_grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    padding-top: 10px;
+}
+
+
+#interests_container #interest_grid .interest_seperator {
+    margin-bottom: 10px;
+    width: 100%;
+}
+#interests_container #interest_grid .interest_seperator:last-child {
+    margin-bottom: 0px;
+}
+
+
+#interests_container #interest_grid .interest {
+    display: block;
+
+    border-radius: 10px;
+    background-color: var(--color_black_dark);
+
+    background-position: center;
+    background-size: cover;
+
+    overflow: hidden;
+
+    position: relative;
+
+    text-decoration: none;
+
+    padding: 20px;
+    margin: 5px;
+}
+
+#interests_container #interest_grid .interest.w1 {
+    width: 100%;
+}
+#interests_container #interest_grid .interest.w2 {
+    width: 64.60%;
+}
+#interests_container #interest_grid .interest.w3 {
+    width: 47.90%;
+}
+#interests_container #interest_grid .interest.w4 {
+    width: 31.25%;
+}
+
+#interests_container #interest_grid .interest.h1 {
+    height: 80px;
+}
+#interests_container #interest_grid .interest.h2 {
+    height: 160px;
+}
+#interests_container #interest_grid .interest.h3 {
+    height: 240px;
+}
+
+
+#interests_container #interest_grid .interest .layer_container {
+    position: relative;
+    display: block;
+
+    max-width: 250px;
+    width: 100%;
+    height: 100%;
+
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#interests_container #interest_grid .interest .layer {
+    position: absolute;
+    width: 100%;
+
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+
+/* Contact */
+#contact_container #container_content #content_socials {
+    display: flex;
+}
+
+#contact_container #container_content #content_socials .contact_button {
+    display: flex;
+
+    margin-left: 10px;
+    margin-right: 10px;
+
+    cursor: pointer;
+
+    align-items: center;
+
+    font-size: 14px;
+    text-decoration: none;
+
+    color: var(--color_white);
+}
+#contact_container #container_content #content_socials .contact_button:hover {
+    color: var(--color_white_light);
+}
+
+#contact_container #container_content #content_socials .contact_button img {
+    height: 28px;
+    margin-right: 5px;
+}
+#contact_container #container_content #content_socials .contact_button:hover img {
+    filter: brightness(var(--hover_brightness));
+}
+
+
+/* Facts */
+#facts_container #container_content #facts_list {
+    padding-left: 15px;
+
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+#facts_container #container_content #outro {
+    margin-top: 10px;
+}
+
+#facts_container #container_content #pooblemooble {
+    float: right;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}

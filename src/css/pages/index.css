@@ -1,0 +1,9 @@
+/* Intro container. */
+#intro_container {
+    overflow: hidden;
+}
+
+#intro_container img {
+    margin-top: -30px;
+    margin-bottom: -30px;
+}

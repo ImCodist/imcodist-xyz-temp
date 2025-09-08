@@ -1,0 +1,39 @@
+<div class="container" id="me_container">
+    <div id="container_header">
+        <div id="title">Who am I?</div>
+        <div id="buttons"></div>
+    </div>
+
+    <div id="container_content">
+        <div id="goober_container">
+            <img src="/assets/images/me/me_codist.gif" id="goober" class="left">
+            <img src="/assets/images/me/me_fox.gif" id="goober" class="right">
+        </div>
+
+        <div id="me_content_container">
+            <div id="title">
+                <div id="text">
+                    I'm <span id="codist">c<span id="g">o</span>d<span id="g">i</span>s<span id="g">t</span></span>!
+                </div>
+                <div id="sep"></div>
+                <div id="flags">
+                    <img src="/assets/images/me/flag_nb.png" title="Non-binary">
+                    <img src="/assets/images/me/flag_ace.png" title="Asexual">
+                    <div id="sep"></div>
+                    <img src="/assets/images/me/flag_canada.png" title="Canadian">
+                </div>
+            </div>
+            <div id="woke">they / them</div>
+            <div id="main">
+                I'm also a <b>programmer</b>, <b>game developer</b>, and <b>artist</b>.<br>
+                The associated human is <b><span class="age"></span> years old</b>, lives in <b>Canada</b>, and has a <b>severe addiction</b> to <b>sugar</b>.<br>
+            </div>
+            <div id="birthday" class="birthday birthday_hidden">
+                Oh! Looks like <b>today</b> is their <b>birthday</b>!
+            </div>
+            {% if me_learn_more %}
+            <div id="more"><a href="/me">Learn more...</a></div>
+            {% endif %}
+        </div>
+    </div>
+</div>

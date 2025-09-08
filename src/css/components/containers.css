@@ -1,0 +1,81 @@
+/* The main container type. */
+.container {
+    /* Background. */
+    background-color: var(--color_black_dark);
+    background-image: url("/assets/images/container/background.png");
+    /* Round edges. */
+    border-radius: 10px;
+
+    /* Box propertys. */
+    position: relative;
+    padding: 20px;
+
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+
+/* The header for the container. */
+.container #container_header {
+    /* Display as a flexbox. */
+    display: flex;
+
+    /* Box propertys. */
+    position: relative;
+    top: -20px;
+    
+    margin-left: -20px;
+    margin-right: -20px;
+
+    height: 25px;
+
+    /* Move contents to a better spot. */
+    padding: 10px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+
+    /* Header text styling. */
+    font-size: 24px;
+    font-family: "Modern DOS 8x8";
+
+    /* Background. */
+    background-color: var(--color_primary);
+    /* Round top edges. */
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+
+    /* Decoration */
+    background-image: url("/assets/images/container/decoration.png");
+    background-position: 8px 3px;
+    background-repeat: no-repeat;
+}
+
+/* The title that exists in the containers header. */
+.container #container_header #title {
+    /* The decoration to the text. */
+    background-image: url("/assets/images/container/decoration_title.png");
+
+    /* Ignore selection. */
+    pointer-events: none;
+    user-select: none;
+}
+.container #container_header:has(#title) {
+    background-image: none;
+}
+
+/* The buttons that exist in the containers header. */
+.container #container_header #buttons {
+    /* The size of the image. */
+    width: 63px;
+    height: 20px;
+    
+    /* The image itself. */
+    background-image: url("/assets/images/container/toppers.png");
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
+
+    /* Place on the right of the header. */
+    position: absolute;
+    top: 3px;
+    right: 5px;
+}

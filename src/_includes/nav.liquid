@@ -1,0 +1,30 @@
+<script>
+    function changeNavTooltip(tooltip) {
+        $("#nav_tooltip_text").html(tooltip);
+    }
+</script>
+
+<div class="container" id="nav_container">
+    <div id="container_content">
+        <!-- Nav buttons. -->
+        {% for nav_item in nav %}
+            <a href="{{ nav_item.href }}" class="nav_button" id="nav_button_{{ nav_item.id }}" title="{{ nav_item.name }}">
+                <img src="/assets/images/nav/{{ nav_item.icon }}.png" alt="{{ nav_item.id }}">
+            </a>
+            <script>
+                $("#nav_button_{{ nav_item.id }}").hover(function() {
+                    changeNavTooltip("{{ nav_item.name }}");
+                }, function() {
+                    changeNavTooltip("");
+                });
+            </script>
+        {% endfor %}
+
+        <div id="nav_seperator"></div>
+
+        <!-- The tooltip for the nav buttons. -->
+        <div id="nav_tooltip">
+            <div id="nav_tooltip_text"></div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,14 @@
+---
+layout: base.liquid
+css: index.css
+---
+
+<div class="container" id="intro_container">
+    <img src="/assets/images/pages/index/hiimcodist.gif" alt="Hi I'm Codist!">
+</div>
+
+{% assign me_learn_more = true %}
+{% include "me.liquid" %}
+
+{% assign socials_show_unimportant = false %}
+{% include "socials.liquid" %}

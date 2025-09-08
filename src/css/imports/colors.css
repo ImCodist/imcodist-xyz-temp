@@ -1,0 +1,24 @@
+:root {
+    /* Primary */
+    --color_primary: #D34545;
+    --color_primary_dark: #7A3045;
+    --color_primary_light: #FF5E5E;
+
+    /* Secondary / Accent */
+    --color_secondary: #63CAB3;
+    --color_secondary_dark: #26A07E;
+    --color_secondary_light: #98E0CF;
+
+    /* Blacks */
+    --color_black: #40212A;
+    --color_black_dark: #0F070A;
+    --color_black_light: #a6566f;
+
+    /* Whites */
+    --color_white: #F6E8EA;
+    --color_white_dark: #C6AFB2;
+    --color_white_light: #FFF1F3;
+
+    /* Hover brightness. */
+    --hover_brightness: 125%;
+}

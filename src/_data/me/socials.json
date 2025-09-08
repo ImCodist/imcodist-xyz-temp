@@ -1,0 +1,101 @@
+{
+    "bluesky": {
+        "icon": "bluesky",
+        "name": "Bluesky",
+        "href": "https://bsky.app/profile/imcodist.xyz",
+        "contact_text": "Direct<br>Messages",
+        "contact_hover": "Bluesky Direct Messages"
+    },
+    "twitter": {
+        "icon": "twitter",
+        "name": "Twitter / X",
+        "href": "https://twitter.com/ImCodist",
+        "contact_text": "Direct<br>Messages",
+        "contact_hover": "Twitter / X Direct Messages (Unreliable)"
+    },
+    "tumblr": {
+        "icon": "tumblr",
+        "name": "Tumblr",
+        "href": "https://www.tumblr.com/imcodist",
+        "important": false
+    },
+    "github": {
+        "icon": "github",
+        "name": "GitHub",
+        "href": "https://github.com/ImCodist"
+    },
+    "discord": {
+        "icon": "discord",
+        "name": "Discord",
+        "copy": "codist",
+        "copy_message": "Discord username (@codist) copied to clipboard.",
+        "contact_text": "Direct<br>Messages",
+        "contact_hover": "Discord Direct Messages"
+    },
+    "youtube": {
+        "icon": "youtube",
+        "name": "YouTube",
+        "href": "https://www.youtube.com/@codist",
+        "important": false
+    },
+    "twitch": {
+        "icon": "twitch",
+        "name": "Twitch",
+        "href": "https://www.twitch.tv/imcodist",
+        "important": false
+    },
+    "newgrounds": {
+        "icon": "newgrounds",
+        "name": "Newgrounds",
+        "href": "https://codist.newgrounds.com/"
+    },
+    "itch": {
+        "icon": "itch",
+        "name": "Itch.io",
+        "href": "https://codist.itch.io/"
+    },
+    "gamejolt": {
+        "icon": "gamejolt",
+        "name": "Game Jolt",
+        "href": "https://gamejolt.com/@codist",
+        "important": false
+    },
+    "gamebanana": {
+        "icon": "gamebanana",
+        "name": "GameBanana",
+        "href": "https://gamebanana.com/members/1772418",
+        "important": false
+    },
+    "modrinth": {
+        "icon": "modrinth",
+        "name": "Modrinth",
+        "href": "https://modrinth.com/user/ImCodist",
+        "important": false
+    },
+    "steam": {
+        "icon": "steam",
+        "name": "Steam",
+        "href": "https://steamcommunity.com/id/ImCodist/",
+        "important": false
+    },
+    "artfight": {
+        "icon": "artfight",
+        "name": "Art Fight",
+        "href": "https://artfight.net/~codist",
+        "important": false
+    },
+    "kofi": {
+        "icon": "kofi",
+        "name": "Ko-fi",
+        "href": "https://ko-fi.com/codist",
+        "important": false
+    },
+    "email": {
+        "icon": "email",
+        "name": "E-mail",
+        "href": "mailto:imcodist@gmail.com",
+        "hidden": true,
+        "contact_text": "E-mail<br>(only if necessary)",
+        "contact_hover": "E-mail (only if necessary)"
+    }
+}
