@@ -1,0 +1,893 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Metadata -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- External CSS -->
+    <link rel="stylesheet" href="/css/external/modern-normalize.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="/css/base.css">
+    
+    <!-- Page CSS -->
+    <link rel="stylesheet" href="/css/pages/me.css">
+    
+
+    <!-- Initialize variables for Javascript to use. -->
+    <script>
+        birthday = "";
+    </script>
+
+    <!-- External Javascript -->
+    <script src="/js/external/jquery.js"></script>
+    <!-- Javascript -->
+    <script src="/js/base.js"></script>
+    
+
+    <!-- Head Tags -->
+    <title>imcodist.xyz</title>
+</head>
+<body>
+    <div id="main_container">
+        <div id="content_container">
+            <script>
+    function changeNavTooltip(tooltip) {
+        $("#nav_tooltip_text").html(tooltip);
+    }
+</script>
+
+<div class="container" id="nav_container">
+    <div id="container_content">
+        <!-- Nav buttons. -->
+        
+            <a href="/" class="nav_button" id="nav_button_home" title="Home">
+                <img src="/assets/images/nav/home.png" alt="home">
+            </a>
+            <script>
+                $("#nav_button_home").hover(function() {
+                    changeNavTooltip("Home");
+                }, function() {
+                    changeNavTooltip("");
+                });
+            </script>
+        
+            <a href="/me" class="nav_button" id="nav_button_me" title="Me">
+                <img src="/assets/images/nav/me.png" alt="me">
+            </a>
+            <script>
+                $("#nav_button_me").hover(function() {
+                    changeNavTooltip("Me");
+                }, function() {
+                    changeNavTooltip("");
+                });
+            </script>
+        
+
+        <div id="nav_seperator"></div>
+
+        <!-- The tooltip for the nav buttons. -->
+        <div id="nav_tooltip">
+            <div id="nav_tooltip_text"></div>
+        </div>
+    </div>
+</div>
+            
+            
+<div class="container" id="me_container">
+    <div id="container_header">
+        <div id="title">Who am I?</div>
+        <div id="buttons"></div>
+    </div>
+
+    <div id="container_content">
+        <div id="goober_container">
+            <img src="/assets/images/me/me_codist.gif" id="goober" class="left">
+            <img src="/assets/images/me/me_fox.gif" id="goober" class="right">
+        </div>
+
+        <div id="me_content_container">
+            <div id="title">
+                <div id="text">
+                    I'm <span id="codist">c<span id="g">o</span>d<span id="g">i</span>s<span id="g">t</span></span>!
+                </div>
+                <div id="sep"></div>
+                <div id="flags">
+                    <img src="/assets/images/me/flag_nb.png" title="Non-binary">
+                    <img src="/assets/images/me/flag_ace.png" title="Asexual">
+                    <div id="sep"></div>
+                    <img src="/assets/images/me/flag_canada.png" title="Canadian">
+                </div>
+            </div>
+            <div id="woke">they / them</div>
+            <div id="main">
+                I'm also a <b>programmer</b>, <b>game developer</b>, and <b>artist</b>.<br>
+                The associated human is <b><span class="age"></span> years old</b>, lives in <b>Canada</b>, and has a <b>severe addiction</b> to <b>sugar</b>.<br>
+            </div>
+            <div id="birthday" class="birthday birthday_hidden">
+                Oh! Looks like <b>today</b> is their <b>birthday</b>!
+            </div>
+            
+        </div>
+    </div>
+</div>
+
+<div id="socials">
+<div class="container" id="socials_container" name="socials">
+    <div id="container_header">
+        <div id="title">Socials (All)</div>
+        <div id="buttons"></div>
+    </div>
+
+    <div id="container_content">
+        <!-- Nav buttons. -->
+        
+            
+            
+
+            
+                
+                    <a href="https://bsky.app/profile/imcodist.xyz" class="socials_button" id="socials_button_bluesky">
+                        <img src="/assets/images/icons/socials/bluesky.png" alt="Bluesky" title="Bluesky">
+                    </a>
+                    
+                
+            
+        
+            
+            
+
+            
+                
+                    <a href="https://twitter.com/ImCodist" class="socials_button" id="socials_button_twitter">
+                        <img src="/assets/images/icons/socials/twitter.png" alt="Twitter / X" title="Twitter / X">
+                    </a>
+                    
+                
+            
+        
+            
+            
+
+            
+                
+                    <a href="https://www.tumblr.com/imcodist" class="socials_button" id="socials_button_tumblr">
+                        <img src="/assets/images/icons/socials/tumblr.png" alt="Tumblr" title="Tumblr">
+                    </a>
+                    
+                
+            
+        
+            
+            
+
+            
+                
+                    <a href="https://github.com/ImCodist" class="socials_button" id="socials_button_github">
+                        <img src="/assets/images/icons/socials/github.png" alt="GitHub" title="GitHub">
+                    </a>
+                    
+                
+            
+        
+            
+            
+
+            
+                
+                    <a  class="socials_button" id="socials_button_discord">
+                        <img src="/assets/images/icons/socials/discord.png" alt="Discord" title="Discord (Copy)">
+                    </a>
+                    
+                        <script>
+                            $("#socials_button_discord").click(function() {
+                                copyToClipboard(
+                                    "codist",
+                                    "Discord username (@codist) copied to clipboard."
+                                );
+                            });
+                        </script>
+                    
+                
+            
+        
+            
+            
+
+            
+                
+                    <a href="https://www.youtube.com/@codist" class="socials_button" id="socials_button_youtube">
+                        <img src="/assets/images/icons/socials/youtube.png" alt="YouTube" title="YouTube">
+                    </a>
+                    
+                
+            
+        
+            
+            
+
+            
+                
+                    <a href="https://www.twitch.tv/imcodist" class="socials_button" id="socials_button_twitch">
+                        <img src="/assets/images/icons/socials/twitch.png" alt="Twitch" title="Twitch">
+                    </a>
+                    
+                
+            
+        
+            
+            
+
+            
+                
+                    <a href="https://codist.newgrounds.com/" class="socials_button" id="socials_button_newgrounds">
+                        <img src="/assets/images/icons/socials/newgrounds.png" alt="Newgrounds" title="Newgrounds">
+                    </a>
+                    
+                
+            
+        
+            
+            
+
+            
+                
+                    <a href="https://codist.itch.io/" class="socials_button" id="socials_button_itch">
+                        <img src="/assets/images/icons/socials/itch.png" alt="Itch.io" title="Itch.io">
+                    </a>
+                    
+                
+            
+        
+            
+            
+
+            
+                
+                    <a href="https://gamejolt.com/@codist" class="socials_button" id="socials_button_gamejolt">
+                        <img src="/assets/images/icons/socials/gamejolt.png" alt="Game Jolt" title="Game Jolt">
+                    </a>
+                    
+                
+            
+        
+            
+            
+
+            
+                
+                    <a href="https://gamebanana.com/members/1772418" class="socials_button" id="socials_button_gamebanana">
+                        <img src="/assets/images/icons/socials/gamebanana.png" alt="GameBanana" title="GameBanana">
+                    </a>
+                    
+                
+            
+        
+            
+            
+
+            
+                
+                    <a href="https://modrinth.com/user/ImCodist" class="socials_button" id="socials_button_modrinth">
+                        <img src="/assets/images/icons/socials/modrinth.png" alt="Modrinth" title="Modrinth">
+                    </a>
+                    
+                
+            
+        
+            
+            
+
+            
+                
+                    <a href="https://steamcommunity.com/id/ImCodist/" class="socials_button" id="socials_button_steam">
+                        <img src="/assets/images/icons/socials/steam.png" alt="Steam" title="Steam">
+                    </a>
+                    
+                
+            
+        
+            
+            
+
+            
+                
+                    <a href="https://artfight.net/~codist" class="socials_button" id="socials_button_artfight">
+                        <img src="/assets/images/icons/socials/artfight.png" alt="Art Fight" title="Art Fight">
+                    </a>
+                    
+                
+            
+        
+            
+            
+
+            
+                
+                    <a href="https://ko-fi.com/codist" class="socials_button" id="socials_button_kofi">
+                        <img src="/assets/images/icons/socials/kofi.png" alt="Ko-fi" title="Ko-fi">
+                    </a>
+                    
+                
+            
+        
+            
+            
+
+            
+        
+
+        
+    </div>
+</div>
+</div>
+
+<div id="talent">
+<div class="container" id="talent_container">
+    <div id="container_header">
+        <div id="title">Talents</div>
+        <div id="buttons"></div>
+    </div>
+
+    <div id="container_content">
+        <div id="intro">
+            Some would call me <b>talented</b>, so here lies the information on said <b>talents</b>.<br>
+            <div style="margin-top: 10px;"></div>
+            Click the corresponding <b>talent</b> to learn more about it.
+        </div>
+
+        <!-- PROGRAMMING -->
+        <div class="accordion"><img src="/assets/images/icons/talents/programming.png"> Programming</div>
+        <div class="accordion_content">
+            <p>
+                Yes, my username is <b>codist</b> because I <b>code</b> (ist.)
+            </p>
+            <p>
+                I have experience in <b>Python</b>, <b>Java</b>, and a small amount in the <b>C family</b>.<br>
+                If you asked me what my <b>favorite language</b> was, I would likely answer <b>Java</b>.
+            </p>
+            <p>
+                My <b>preferred IDE</b> is <a href="https://code.visualstudio.com/">Visual Studio Code</a>, but when working in <b>Java</b> I use <a href="https://www.jetbrains.com/idea/">IntelliJ IDEA</a>.
+            </p>
+
+            <!-- PYTHON -->
+            <h3 id="icon_header"><img src="/assets/images/icons/programming/python.png"> Python<a class="external_link" href="https://www.python.org/"></a></h3>
+            <ul>
+                <li><a href="https://mcpride.imcodist.xyz/">Minecraft Pride Pack Generator</a> (Web App, Flask)</li>
+                <li><a href="https://github.com/ImCodist/sm64-eye-changer">Super Mario 64 Eye Changer</a> (App, wxPython)</li>
+            </ul>
+            <p>
+                Nowadays I use <b>Python</b> to create small <b>web applications</b> in <b>Flask</b>.<br>
+                If I'm not doing that I'm likely <b>prototyping</b> or <b>automating</b> some annoying task I don't wanna deal with.<br>
+            </p>
+            <p>
+                I used to create <b>desktop applications</b> with Python but it sucked.
+            </p>
+
+            <!-- JAVA -->
+            <h3 id="icon_header"><img src="/assets/images/icons/programming/java.png"> Java<a class="external_link" href="https://www.java.com/en/"></a></h3>
+            <ul>
+                <li><a href="https://github.com/ImCodist/quick-menu">Quick Menu</a> (Minecraft Mod)</li>
+                <li><a href="https://github.com/ImCodist/funny-bfdi">Funny BFDI</a> (Minecraft Mod)</li>
+                <li><a href="https://github.com/ImCodist/simple-player-warps">Simple Player Warps</a> (Minecraft Server Plugin)</li>
+            </ul>
+            <p>
+                Most of my <b>Java</b> work is <b>Minecraft</b> adjacent.<br>
+                But most isn't all, and I do enjoy working in the language.
+            </p>
+            <p>
+                For a <b>highschool project</b> I had built my own <i>extremely rudimentary</i> <b>game engine</b> using the <b>Swing</b> library (a GUI toolkit.)<br>
+                I remade <b>Tetris</b> for the final project, and later <b>Minesweeper</b> for fun.<br>
+            </p>
+            <div id="talent_images">
+                <img src="/assets/images/pages/me/betris.png">
+                <img src="/assets/images/pages/me/minesweeper.png">
+            </div>
+
+            <!-- OTHER -->
+            <h3 id="icon_header"><img src="/assets/images/icons/programming/other.png"> Other</h3>
+            <h4>C++, C#, C</h4>
+            <p>
+                In <b>highschool</b> I was taught some <b>beginner C++</b> concepts.<br>
+                I picked up <b>C#</b> from my little <b>Unity</b> experience, aswell as <b>Celeste modding</b>.<br>
+                All of my <b>C</b> knowledge comes from tinkering with the <a href="https://github.com/n64decomp/sm64">Super Mario 64 decompilation</a>.<br>
+            </p>
+
+            <h4>Haxe<a class="external_link" href="https://haxe.org/"></a></h4>
+            <p>
+                During my time in the <b>Friday Night Funkin'</b> community I built up a good amount of experience in <b>Haxe</b>.<br>
+                Enough where I've made <a href="https://github.com/FunkinCrew/Funkin/issues?q=author%3Aimcodist">small contributions</a> to the <b>main games repository</b>.
+            </p>
+            <p>
+                I've also helped contribute to <b>forks</b>, and <b>mods</b> of <b>Friday Night Funkin'</b>.
+            </p>
+
+            <h4>Lua<a class="external_link" href="https://www.lua.org/"></a></h4>
+            <p>
+                My Lua experience is a amalgamation of <b>Roblox</b> game development, <b>Friday Night Funkin'</b> modding, and other <b>miscellaneous modding frameworks</b>.
+            </p>
+            <p>
+                I think I have enough <b>core knowledge</b> of the language where I could make something good with it.<br>
+                <i>(On second thought, I really wouldn't like that.)</i>
+            </p>
+
+            <h4>HTML & Javascript</h4>
+            <p>
+                Please refer to <b>this very website</b>.<br>
+                Use this site to deduce my front-end web skills.
+            </p>
+        </div>
+
+        <!-- GAME DEV -->
+        <div class="accordion"><img src="/assets/images/icons/talents/gamedev.png"> Game Development</div>
+        <div class="accordion_content">
+            <p>
+                I've worked with a wide variety of <b>game engines</b> and <b>frameworks</b>.<br>
+                My current favorite is <b>Godot</b>!
+            </p>
+            <p>
+                I love to create <b>hyperaccurate recreations</b> of my favorite video games.<br>
+                These <b>recreations</b> account for about 50% of my portfolio.
+            </p>
+            <p>
+                Most of my game development projects are <b>unreleased</b>.
+            </p>
+
+            <!-- GODOT -->
+            <h3 id="icon_header"><img src="/assets/images/icons/gamedev/godot.png"> Godot<a class="external_link" href="https://godotengine.org/"></a></h3>
+            <ul>
+                <li><a href="https://codist.itch.io/literally-just-a-puzzle-block-game">Literally Just a Puzzle Block Game</a> (Tetris Clone)</li>
+                <li><a href="https://elitemastereric.itch.io/zig-zag">Zig-Zag</a> (Game Jam)</li>
+                <li><a href="https://github.com/codists-dump/FNF-Godot-Remake">Friday Night Funkin' Godot</a> (Recreation)</li>
+            </ul>
+            <p>
+                Godot's <b>node based infrastructure</b> and focus on <b>object independency</b> is something I fell in love with.<br>
+                I am unsure if I will find another game engine I am as comfortable working in.
+            </p>
+            <p>
+                The first project I made in Godot was an <b>online multiplayer checkers game</b>.<br>
+            </p>
+            <div id="talent_images">
+                <img src="/assets/images/pages/me/checkers.png">
+            </div>
+            <p>
+                It was <b>extremely basic</b> and its graphics definitely looked.<br>
+                But it's charming and I love it for that.
+            </p>
+
+            <!-- GAME MAKER STUDIO -->
+            <h3 id="icon_header"><img src="/assets/images/icons/gamedev/gms.png"> Game Maker Studio<a class="external_link" href="https://gamemaker.io/en"></a></h3>
+            <ul>
+                <li><a href="https://codist.itch.io/b-leap-classic">B-LEAP</a> (Game Jam)</li>
+            </ul>
+            <p>
+                <b>Game Maker Studio</b> was my first game engine with a <b>scripting language</b>.<br>
+                At that point in my life I had only used game engines whose games were built with <a href="https://en.wikipedia.org/wiki/Visual_programming_language">visual programming languages</a>.
+            </p>
+            <p>
+                Its the game engine I used for most of my adolescence, starting with <b>1.4</b> and eventually moving to <b>2</b>.<br>
+                I remember being very excited for <b>Game Maker Studio 2</b>, in fact it was the <b>first commercial software</b> I had <b>paid for myself</b>!
+            </p>
+            <p>
+                Since moving onto <b>Godot</b>, my knowledge of the engine has <b>degraded</b>.<br>
+                Funnily enough most of my knowledge is <b>maintained</b> through <b>UNDERTALE</b> and <b>DELTARUNE</b> modding.
+            </p>
+            <p>
+                As of <b>September 3rd, 2025</b>, I have <b>2,596 hours</b> on <b>Game Maker Studio 2</b>.<br>
+                <i>(Tracked through Steam.)</i>
+            </p>
+        </div>
+
+        <!-- ART -->
+        <div class="accordion"><img src="/assets/images/icons/talents/art.png"> Art</div>
+        <div class="accordion_content">
+            <p>
+                I am most comfortable creating <b>digital</b> and <b>pixel art</b>.<br>
+                <b>Traditional art</b> is something I practice on <b>rare occasion</b>.<br>
+                <i>(Whenever I want to draw and can't use a computer.)</i>
+            </p>
+            <p>
+                For creating <b>digital art</b> I use <a href="https://www.clipstudio.net/en/">Clip Studio Paint PRO</a>.<br>
+                And for <b>pixel art</b> I use <a href="https://www.aseprite.org/">Aseprite</a>.
+            </p>
+            <p>
+                My <b>art style</b> leans heavily on the <b>cartoony</b> and <b>cel shaded</b> style.<br>
+                I start to <b>falter</b> when depicting more <b>realistic proportions</b> and <b>environments</b>.
+            </p>
+            <p>
+                When I started <b>practicing art</b>, all I was interested in was improving the quality of my <b>video games</b>. I really wanted to make a game <b>single-handedly</b>.<br>
+            </p>
+            <p>
+                But as I started to <b>improve at art</b>, it grew to be a <b>new hobby</b> instead of <b>a means to an end</b>.
+            </p>
+            <div id="talent_images">
+                <img src="/assets/images/pages/me/art_codist.png">
+                <img src="/assets/images/pages/me/art_pixel.png">
+            </div>  
+        </div>
+    </div>
+</div>
+</div>
+
+<div id="interests">
+<div class="container" id="interests_container">
+    <div id="container_header">
+        <div id="title">Interests</div>
+        <div id="buttons"></div>
+    </div>
+    <div id="container_content">
+        <div id="intro">
+            The amount of <b>space</b> an <b>interest</b> occupys in my <b>brain</b> is represented by its <b>size</b>.
+            The <b>bigger</b> an <b>interest</b>, the more I <b>like</b> it.<br>
+            <div style="margin-top: 10px;"></div>
+            Click an <b>interest category</b> to view its related <b>interests</b>.
+        </div>
+        
+            <div class="accordion"><img src="/assets/images/icons/interests/games.png"> Video Games</div>
+            <div class="accordion_content">
+                <div id="interest_grid">
+                    
+                        <style>
+                            #interest_deltarune {
+                                background-image: url('/assets/images/interests/deltarune/bg.png');
+                            }
+                            
+                            #interest_deltarune:hover {
+                                background-image: url('/assets/images/interests/deltarune/bg_animated.gif');
+                            }
+                            
+                        </style>
+                        
+                        <a 
+                            id="interest_deltarune"
+                            href="https://deltarune.com/"
+                            class="interest w1 h1"
+                        >
+                        <div class="layer_container">
+                            
+                                <img class="layer" src="/assets/images/interests/deltarune/layer1.png"></img>
+                            
+                                <img class="layer" src="/assets/images/interests/deltarune/layer2.png"></img>
+                            
+                        </div>
+                        </a>
+                    
+                        <style>
+                            #interest_supermario {
+                                background-image: url('/assets/images/interests/supermario/bg.png');
+                            }
+                            
+                            #interest_supermario:hover {
+                                background-image: url('/assets/images/interests/supermario/bg_animated.gif');
+                            }
+                            
+                        </style>
+                        
+                        <a 
+                            id="interest_supermario"
+                            href="https://mario.nintendo.com/"
+                            class="interest w1 h1"
+                        >
+                        <div class="layer_container">
+                            
+                                <img class="layer" src="/assets/images/interests/supermario/layer1.png"></img>
+                            
+                        </div>
+                        </a>
+                    
+                        <style>
+                            #interest_minecraft {
+                                background-image: url('/assets/images/interests/minecraft/bg.png');
+                            }
+                            
+                        </style>
+                        
+                        <a 
+                            id="interest_minecraft"
+                            href="https://www.minecraft.net/"
+                            class="interest w2 h1"
+                        >
+                        <div class="layer_container">
+                            
+                                <img class="layer" src="/assets/images/interests/minecraft/layer1.png"></img>
+                            
+                        </div>
+                        </a>
+                    
+                        <style>
+                            #interest_fnf {
+                                background-image: url('/assets/images/interests/fnf/bg.png');
+                            }
+                            
+                            #interest_fnf:hover {
+                                background-image: url('/assets/images/interests/fnf/bg_animated.gif');
+                            }
+                            
+                        </style>
+                        
+                        <a 
+                            id="interest_fnf"
+                            href="https://www.newgrounds.com/portal/view/770371"
+                            class="interest w4 h1"
+                        >
+                        <div class="layer_container">
+                            
+                                <img class="layer" src="/assets/images/interests/fnf/layer1.png"></img>
+                            
+                        </div>
+                        </a>
+                    
+                        <style>
+                            #interest_undertale {
+                                background-image: url('/assets/images/interests/undertale/bg.png');
+                            }
+                            
+                        </style>
+                        
+                        <a 
+                            id="interest_undertale"
+                            href="https://undertale.com/"
+                            class="interest w3 h1"
+                        >
+                        <div class="layer_container">
+                            
+                                <img class="layer" src="/assets/images/interests/undertale/layer1.png"></img>
+                            
+                                <img class="layer" src="/assets/images/interests/undertale/layer2.png"></img>
+                            
+                        </div>
+                        </a>
+                    
+                        <style>
+                            #interest_celeste {
+                                background-image: url('/assets/images/interests/celeste/bg.png');
+                            }
+                            
+                            #interest_celeste:hover {
+                                background-image: url('/assets/images/interests/celeste/bg_animated.gif');
+                            }
+                            
+                        </style>
+                        
+                        <a 
+                            id="interest_celeste"
+                            href="https://www.celestegame.com/"
+                            class="interest w3 h1"
+                        >
+                        <div class="layer_container">
+                            
+                                <img class="layer" src="/assets/images/interests/celeste/layer1.png"></img>
+                            
+                        </div>
+                        </a>
+                    
+                        <style>
+                            #interest_tf2 {
+                                background-image: url('/assets/images/interests/tf2/bg.png');
+                            }
+                            
+                        </style>
+                        
+                        <a 
+                            id="interest_tf2"
+                            href="https://www.teamfortress.com/"
+                            class="interest w4 h1"
+                        >
+                        <div class="layer_container">
+                            
+                                <img class="layer" src="/assets/images/interests/tf2/layer1.png"></img>
+                            
+                        </div>
+                        </a>
+                    
+                        <style>
+                            #interest_roblox {
+                                background-image: url('/assets/images/interests/roblox/bg.png');
+                            }
+                            
+                        </style>
+                        
+                        <a 
+                            id="interest_roblox"
+                            href="https://www.roblox.com/"
+                            class="interest w4 h1"
+                        >
+                        <div class="layer_container">
+                            
+                                <img class="layer" src="/assets/images/interests/roblox/layer1.png"></img>
+                            
+                        </div>
+                        </a>
+                    
+                        <style>
+                            #interest_isaac {
+                                background-image: url('/assets/images/interests/isaac/bg.png');
+                            }
+                            
+                        </style>
+                        
+                        <a 
+                            id="interest_isaac"
+                            href="https://store.steampowered.com/app/570660/The_Binding_of_Isaac_Afterbirth/"
+                            class="interest w4 h1"
+                        >
+                        <div class="layer_container">
+                            
+                                <img class="layer" src="/assets/images/interests/isaac/layer1.png"></img>
+                            
+                        </div>
+                        </a>
+                    
+                </div>
+            </div>
+        
+            <div class="accordion"><img src="/assets/images/icons/interests/misc.png"> Miscellaneous</div>
+            <div class="accordion_content">
+                <div id="interest_grid">
+                    
+                        <style>
+                            #interest_homestuck {
+                                background-image: url('/assets/images/interests/homestuck/bg.png');
+                            }
+                            
+                        </style>
+                        
+                        <a 
+                            id="interest_homestuck"
+                            href="https://homestuck.com/"
+                            class="interest w4 h1"
+                        >
+                        <div class="layer_container">
+                            
+                                <img class="layer" src="/assets/images/interests/homestuck/layer1.png"></img>
+                            
+                        </div>
+                        </a>
+                    
+                </div>
+            </div>
+        
+        <div id="outro">
+            <i class="text_small">(My interests are <b>ever-changing</b>, so the <b>accuracy</b> of this list is <b>questionable</b>.)</i>
+        </div>
+    </div>
+</div>
+</div>
+
+<div id="more">
+<div class="container" id="me_again_container">
+    <div id="container_header">
+        <div id="title">Who am I <i>really</i>?</div>
+        <div id="buttons"></div>
+    </div>
+    <div id="container_content">
+        <img src="/assets/images/pages/me/gunglefuss.gif" id="gunglefuss">
+        <div id="content">
+            <p>
+                <b>Oh boy!</b> More text about <b>some internet guy</b>.<br>
+                <i>("guy" used in its gender neutral context.)</i>
+            </p>
+            <p>
+                My <b>real name</b> is <b>Jacob</b>. I live in a <b>household</b>.<br>
+                My preferred <b>pronouns</b> are <b>they / them</b>.<br>
+                My <b>birthday</b> is on <b>12/21/2005</b>.<br>
+                I speak <b>English</b>. And I've completed <b>compulsory schooling</b>.<br>
+            </p>
+            <p>
+                I believe to have garnered a collection of diagnosed and undiagnosed <b>mental disorders</b>.<br>
+                If you have to speak with me, be <b>clear</b> and <b>direct</b>. Avoid <b>implications</b> or <b>presuppositions</b>.<br>
+                If I struggle to speak to you, I will avoid you.
+            </p>
+            <p>
+                My friends describe me as <b>spontaneous</b>, <b>creative</b>, <b>skilled</b>, <b>fun</b>, <b>uplifting</b>, <b>inspirational</b>, <b>glooby</b>, <b>amazeballs</b>, <b>never glooby</b>, and <b>gweeble</b>.<br>
+            </p>
+        </div>
+    </div>
+</div>
+</div>
+
+<div id="contact">
+<div class="container" id="contact_container">
+    <div id="container_header">
+        <div id="title">Contact</div>
+        <div id="buttons"></div>
+    </div>
+    <div id="container_content">
+        <div id="content_socials">
+        
+            
+
+            <a class="contact_button" id="contact_button_discord"  title="Discord Direct Messages (Copy)">
+                <img src="/assets/images/icons/socials/discord.png">
+                <div id="text">Direct<br>Messages</div>
+            </a>
+
+            
+                <script>
+                    $("#contact_button_discord").click(function() {
+                        copyToClipboard(
+                            "codist",
+                            "Discord username (@codist) copied to clipboard."
+                        );
+                    });
+                </script>
+            
+        
+            
+
+            <a class="contact_button" id="contact_button_bluesky" href="https://bsky.app/profile/imcodist.xyz" title="Bluesky Direct Messages">
+                <img src="/assets/images/icons/socials/bluesky.png">
+                <div id="text">Direct<br>Messages</div>
+            </a>
+
+            
+        
+            
+
+            <a class="contact_button" id="contact_button_twitter" href="https://twitter.com/ImCodist" title="Twitter / X Direct Messages (Unreliable)">
+                <img src="/assets/images/icons/socials/twitter.png">
+                <div id="text">Direct<br>Messages</div>
+            </a>
+
+            
+        
+            
+
+            <a class="contact_button" id="contact_button_email" href="mailto:imcodist@gmail.com" title="E-mail (only if necessary)">
+                <img src="/assets/images/icons/socials/email.png">
+                <div id="text">E-mail<br>(only if necessary)</div>
+            </a>
+
+            
+        
+        </div>
+    </div>
+</div>
+</div>
+
+<div id="facts">
+<div class="container" id="facts_container">
+    <div id="container_header">
+        <div id="title">Facts</div>
+        <div id="buttons"></div>
+    </div>
+    <div id="container_content">
+        <img id="pooblemooble" src="/assets/images/pages/me/pooblemooble.gif">
+        <ul id="facts_list">
+            <li>
+                I will pick <b>Mario</b> in <b>every game</b> he is avaliable.
+            </li>
+            <li>
+                I am a <b>dog</b> person. <i>(Though some <b>cats</b> are way better then some of the <b>worst dogs</b>.)</i>
+            </li>
+            <li>
+                I love <b>Poutine</b>, like a <b>lot</b>. If you haven't had one please do it's very worth it.
+            </li>
+            <li>
+                My favorite <b>candy</b> (as of writing this) is <b>Sour Patch Kids Cherry Blasters</b>.
+            </li>
+            <li>
+                My favorite <b>chip flavor</b> (as of writing this) is <b>BBQ</b>.
+            </li>
+            <li>
+                I have never had an <b>energy drink</b>.
+            </li>
+            <li>
+                I prefer <b>Pepsi</b> over <b>Coca-Cola</b>, but I usually go with whatever I'm the least tired of at the time.
+            </li>
+            <li>
+                The <b>last number</b> of my <b>like</b> was <b>5</b>.
+            </li>
+            <li>
+                I own a <b>custom plush</b> of <b>both</b> of my <b>sonas</b>. <i>(Done by <a href="https://middy.straw.page/">Middy</a>)</i>
+            </li>
+        </ul>
+        <div class="text_small" id="outro"><i>(All these <b>facts</b> are relative to <b>when I last wrote them</b> and may be <b>outdated</b>.)</i></div>
+    </div>
+</div>
+</div>
+        </div>
+    </div>
+</body>
+</html>

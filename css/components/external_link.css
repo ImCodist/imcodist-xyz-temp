@@ -1,0 +1,22 @@
+a.external_link {
+    display: inline-block;
+
+    background-image: url("/assets/images/external_link/external_link.png");
+    background-size: 16px, 16px;
+    background-position: center center;
+
+    width: 16px;
+    height: 16px;
+
+    margin: 8px;
+
+    margin-bottom: 0px;
+    margin-top: 0px;
+
+    text-decoration: none;
+
+    vertical-align: sub;
+}
+a.external_link:hover {
+    background-image: url("/assets/images/external_link/external_link_hover.png");
+}

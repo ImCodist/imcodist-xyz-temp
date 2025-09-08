@@ -1,0 +1,52 @@
+/* The nav bar itself. */
+#nav_container {
+    width: 100%;
+}
+
+#nav_container #container_content {
+    display: flex;
+    align-items: center;
+}
+
+
+/* The nav buttons within the nav bar. */
+#nav_container #container_content .nav_button {
+    text-decoration: none;
+    
+    width: 35px;
+    height: 30px;
+
+    margin-top: -5px;
+    margin-bottom: -5px;
+}
+#nav_container #container_content .nav_button:hover {
+    filter: brightness(var(--hover_brightness));
+}
+#nav_container #container_content .nav_button img {
+    /* Set image size. */
+    width: 30px;
+}
+
+
+/* The seperator. */
+#nav_container #container_content #nav_seperator {
+    flex-grow: 1;
+}
+
+
+/* The name tooltip. */
+#nav_container #container_content #nav_tooltip {
+    background-color: var(--color_black_dark);
+    border-radius: 10px;
+
+    margin-top: -5px;
+    margin-bottom: -5px;
+
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#nav_container #container_content #nav_tooltip #nav_tooltip_text {
+    font-size: 24px;
+    font-family: "Modern DOS 8x8";
+}

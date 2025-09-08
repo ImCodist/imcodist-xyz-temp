@@ -1,0 +1,17 @@
+#socials_container #container_content {
+    display: flex;
+}
+
+
+#socials_container #container_content .socials_button {
+    text-decoration: none;
+
+    cursor: pointer;
+}
+
+#socials_container #container_content .socials_button img {
+    width: 38px;
+}
+#socials_container #container_content .socials_button:hover img {
+    filter: brightness(var(--hover_brightness));
+}

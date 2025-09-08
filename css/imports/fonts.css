@@ -1,0 +1,63 @@
+/* Ubuntu (+ Styles) */
+@font-face { /* Regular */
+    font-family: "Ubuntu";
+    src: url("/assets/fonts/Ubuntu/Ubuntu-Regular.ttf");
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face { /* Regular Italic */
+    font-family: "Ubuntu";
+    src: url("/assets/fonts/Ubuntu/Ubuntu-Italic.ttf");
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face { /* Light */
+    font-family: "Ubuntu";
+    src: url("/assets/fonts/Ubuntu/Ubuntu-Light.ttf");
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face { /* Light Italic */
+    font-family: "Ubuntu";
+    src: url("/assets/fonts/Ubuntu/Ubuntu-LightItalic.ttf");
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face { /* Medium */
+    font-family: "Ubuntu";
+    src: url("/assets/fonts/Ubuntu/Ubuntu-Medium.ttf");
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face { /* Medium Italic */
+    font-family: "Ubuntu";
+    src: url("/assets/fonts/Ubuntu/Ubuntu-MediumItalic.ttf");
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face { /* Bold */
+    font-family: "Ubuntu";
+    src: url("/assets/fonts/Ubuntu/Ubuntu-Bold.ttf");
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face { /* Bold Italic */
+    font-family: "Ubuntu";
+    src: url("/assets/fonts/Ubuntu/Ubuntu-BoldItalic.ttf");
+    font-weight: 700;
+    font-style: italic;
+}
+
+
+/* Modern DOS */
+@font-face { /* 8x16 */
+    font-family: "Modern DOS 8x16";
+    src: url("/assets/fonts/ModernDOS/ModernDOS8x16.ttf");
+}
+@font-face { /* 8x8 */
+    font-family: "Modern DOS 8x8";
+    src: url("/assets/fonts/ModernDOS/ModernDOS8x8.ttf");
+}

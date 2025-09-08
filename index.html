@@ -1,0 +1,294 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Metadata -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- External CSS -->
+    <link rel="stylesheet" href="/css/external/modern-normalize.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="/css/base.css">
+    
+    <!-- Page CSS -->
+    <link rel="stylesheet" href="/css/pages/index.css">
+    
+
+    <!-- Initialize variables for Javascript to use. -->
+    <script>
+        birthday = "";
+    </script>
+
+    <!-- External Javascript -->
+    <script src="/js/external/jquery.js"></script>
+    <!-- Javascript -->
+    <script src="/js/base.js"></script>
+    
+
+    <!-- Head Tags -->
+    <title>imcodist.xyz</title>
+</head>
+<body>
+    <div id="main_container">
+        <div id="content_container">
+            <script>
+    function changeNavTooltip(tooltip) {
+        $("#nav_tooltip_text").html(tooltip);
+    }
+</script>
+
+<div class="container" id="nav_container">
+    <div id="container_content">
+        <!-- Nav buttons. -->
+        
+            <a href="/" class="nav_button" id="nav_button_home" title="Home">
+                <img src="/assets/images/nav/home.png" alt="home">
+            </a>
+            <script>
+                $("#nav_button_home").hover(function() {
+                    changeNavTooltip("Home");
+                }, function() {
+                    changeNavTooltip("");
+                });
+            </script>
+        
+            <a href="/me" class="nav_button" id="nav_button_me" title="Me">
+                <img src="/assets/images/nav/me.png" alt="me">
+            </a>
+            <script>
+                $("#nav_button_me").hover(function() {
+                    changeNavTooltip("Me");
+                }, function() {
+                    changeNavTooltip("");
+                });
+            </script>
+        
+
+        <div id="nav_seperator"></div>
+
+        <!-- The tooltip for the nav buttons. -->
+        <div id="nav_tooltip">
+            <div id="nav_tooltip_text"></div>
+        </div>
+    </div>
+</div>
+            
+            
+<div class="container" id="intro_container">
+    <img src="/assets/images/pages/index/hiimcodist.gif" alt="Hi I'm Codist!">
+</div>
+
+
+<div class="container" id="me_container">
+    <div id="container_header">
+        <div id="title">Who am I?</div>
+        <div id="buttons"></div>
+    </div>
+
+    <div id="container_content">
+        <div id="goober_container">
+            <img src="/assets/images/me/me_codist.gif" id="goober" class="left">
+            <img src="/assets/images/me/me_fox.gif" id="goober" class="right">
+        </div>
+
+        <div id="me_content_container">
+            <div id="title">
+                <div id="text">
+                    I'm <span id="codist">c<span id="g">o</span>d<span id="g">i</span>s<span id="g">t</span></span>!
+                </div>
+                <div id="sep"></div>
+                <div id="flags">
+                    <img src="/assets/images/me/flag_nb.png" title="Non-binary">
+                    <img src="/assets/images/me/flag_ace.png" title="Asexual">
+                    <div id="sep"></div>
+                    <img src="/assets/images/me/flag_canada.png" title="Canadian">
+                </div>
+            </div>
+            <div id="woke">they / them</div>
+            <div id="main">
+                I'm also a <b>programmer</b>, <b>game developer</b>, and <b>artist</b>.<br>
+                The associated human is <b><span class="age"></span> years old</b>, lives in <b>Canada</b>, and has a <b>severe addiction</b> to <b>sugar</b>.<br>
+            </div>
+            <div id="birthday" class="birthday birthday_hidden">
+                Oh! Looks like <b>today</b> is their <b>birthday</b>!
+            </div>
+            
+            <div id="more"><a href="/me">Learn more...</a></div>
+            
+        </div>
+    </div>
+</div>
+
+
+<div class="container" id="socials_container" name="socials">
+    <div id="container_header">
+        <div id="title">Socials </div>
+        <div id="buttons"></div>
+    </div>
+
+    <div id="container_content">
+        <!-- Nav buttons. -->
+        
+            
+            
+
+            
+                
+                    <a href="https://bsky.app/profile/imcodist.xyz" class="socials_button" id="socials_button_bluesky">
+                        <img src="/assets/images/icons/socials/bluesky.png" alt="Bluesky" title="Bluesky">
+                    </a>
+                    
+                
+            
+        
+            
+            
+
+            
+                
+                    <a href="https://twitter.com/ImCodist" class="socials_button" id="socials_button_twitter">
+                        <img src="/assets/images/icons/socials/twitter.png" alt="Twitter / X" title="Twitter / X">
+                    </a>
+                    
+                
+            
+        
+            
+            
+
+            
+                
+            
+        
+            
+            
+
+            
+                
+                    <a href="https://github.com/ImCodist" class="socials_button" id="socials_button_github">
+                        <img src="/assets/images/icons/socials/github.png" alt="GitHub" title="GitHub">
+                    </a>
+                    
+                
+            
+        
+            
+            
+
+            
+                
+                    <a  class="socials_button" id="socials_button_discord">
+                        <img src="/assets/images/icons/socials/discord.png" alt="Discord" title="Discord (Copy)">
+                    </a>
+                    
+                        <script>
+                            $("#socials_button_discord").click(function() {
+                                copyToClipboard(
+                                    "codist",
+                                    "Discord username (@codist) copied to clipboard."
+                                );
+                            });
+                        </script>
+                    
+                
+            
+        
+            
+            
+
+            
+                
+            
+        
+            
+            
+
+            
+                
+            
+        
+            
+            
+
+            
+                
+                    <a href="https://codist.newgrounds.com/" class="socials_button" id="socials_button_newgrounds">
+                        <img src="/assets/images/icons/socials/newgrounds.png" alt="Newgrounds" title="Newgrounds">
+                    </a>
+                    
+                
+            
+        
+            
+            
+
+            
+                
+                    <a href="https://codist.itch.io/" class="socials_button" id="socials_button_itch">
+                        <img src="/assets/images/icons/socials/itch.png" alt="Itch.io" title="Itch.io">
+                    </a>
+                    
+                
+            
+        
+            
+            
+
+            
+                
+            
+        
+            
+            
+
+            
+                
+            
+        
+            
+            
+
+            
+                
+            
+        
+            
+            
+
+            
+                
+            
+        
+            
+            
+
+            
+                
+            
+        
+            
+            
+
+            
+                
+            
+        
+            
+            
+
+            
+        
+
+        
+            <a href="/me#socials" class="socials_button"">
+                <img src="/assets/images/icons/socials/more.png" alt="More..." title="More...">
+            </a>
+        
+    </div>
+</div>
+
+        </div>
+    </div>
+</body>
+</html>

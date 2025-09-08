@@ -1,0 +1,67 @@
+/* Imports. */
+@import url("imports/colors.css");
+@import url("imports/fonts.css");
+
+@import url("components/containers.css");
+@import url("components/accordion.css");
+@import url("components/external_link.css");
+
+@import url("includes/nav.css");
+@import url("includes/me.css");
+@import url("includes/socials.css");
+
+
+/* Update base tags. */
+body {
+    margin: 0px;
+    padding: 0px;
+
+    /* Update text. */
+    color: var(--color_white);
+    font-family: "Ubuntu", system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+
+    /* Background. */
+    background-color: var(--color_black_dark);
+}
+
+/* Update link colors. */
+a {
+    color: var(--color_secondary_dark);
+}
+a:visited {
+    /* Ignore the visited color for consistency. */
+    color: var(--color_secondary_dark);
+}
+a:hover {
+    color: var(--color_secondary);
+}
+
+
+/* Base containers. */
+#main_container {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    flex-direction: column;
+
+    min-height: 100dvh;
+    padding: 10px;
+}
+
+#content_container {
+    display: flex;
+
+    flex-direction: column;
+    align-items: center;
+
+    max-width: 640px;
+}
+
+
+/* Some helpful classes for text. */
+.text_small {
+    color: var(--color_black_light);
+    font-size: 12px;
+}
