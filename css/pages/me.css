@@ -27,6 +27,10 @@
 #talent_images {
     display: flex;
     justify-content: space-around;
+
+    overflow-x: scroll;
+
+    border-radius: 10px;
 }
 
 #talent_images img {
@@ -156,11 +160,14 @@
 /* Contact */
 #contact_container #container_content #content_socials {
     display: flex;
+    flex-wrap: wrap;
 }
 
 #contact_container #container_content #content_socials .contact_button {
     display: flex;
 
+    margin-top: 5px;
+    margin-bottom: 5px;
     margin-left: 10px;
     margin-right: 10px;
 
@@ -202,4 +209,23 @@
     float: right;
     margin-left: 20px;
     margin-bottom: 20px;
+}
+
+
+/* Mobile */
+@media only screen and (max-width: 700px) {
+    #intro_container img {
+        width: 300px;
+    }
+
+    /* Interests stuff. */
+    #interests_container #interest_grid .interest.w2 {
+        width: 63%;
+    }
+    #interests_container #interest_grid .interest.w3 {
+        width: 46.35%;
+    }
+    #interests_container #interest_grid .interest.w4 {
+        width: 29.70%;
+    }
 }
