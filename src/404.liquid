@@ -12,7 +12,7 @@ css: 404.css
 
 <div id="tv_container">
     <div id="content">
-        <img id="game" src="/assets/images/pages/404/deaths/smb1.gif">
+        <img id="game" src="">
         <img id="tv" src="/assets/images/pages/404/tv.png">
         <img id="tv_light" src="/assets/images/pages/404/tv_light.png">
         <img class="chara" id="chara" src="/assets/images/pages/404/character.png">
@@ -23,3 +23,17 @@ css: 404.css
 <div class="container">
     <a href="/">> Go <b>home</b>.</a>
 </div>
+
+
+<script>
+    games = [
+        "sm64",
+        "celeste",
+        "smb1",
+        "undertale",
+        "isaac"
+    ]
+
+    pickedGame = games[Math.floor(Math.random() * games.length)];
+    $("#tv_container #content #game").prop("src", `/assets/images/pages/404/deaths/${pickedGame}.gif`)
+</script>
