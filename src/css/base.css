@@ -65,3 +65,11 @@ a:hover {
     color: var(--color_black_light);
     font-size: 12px;
 }
+
+
+/* Mobile */
+@media only screen and (max-width: 700px) {
+    #content_container {
+        max-width: 355px;
+    }
+}

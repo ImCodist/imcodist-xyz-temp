@@ -1,5 +1,7 @@
 #socials_container #container_content {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 
