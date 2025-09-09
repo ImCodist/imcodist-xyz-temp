@@ -3,7 +3,9 @@
     font-size: 86px;
 
     margin-bottom: -20px;
-    margin-top: -10px;
+    margin-top: -15px;
+
+    text-align: center;
 }
 
 #desc {
@@ -55,8 +57,17 @@
     from {
         opacity: 50%;
     }
+    5% {
+        opacity: 45%;
+    }
+    10% {
+        opacity: 50%;
+    }
     25% {
         opacity: 35%;
+    }
+    30% {
+        opacity: 40%;
     }
     50% {
         opacity: 45%;
