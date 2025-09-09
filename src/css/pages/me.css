@@ -220,12 +220,12 @@
 
     /* Interests stuff. */
     #interests_container #interest_grid .interest.w2 {
-        width: 63%;
+        width: 62.95%;
     }
     #interests_container #interest_grid .interest.w3 {
-        width: 46.35%;
+        width: 46.30%;
     }
     #interests_container #interest_grid .interest.w4 {
-        width: 29.70%;
+        width: 29.65%;
     }
 }

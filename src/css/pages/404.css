@@ -120,3 +120,11 @@
 #home_container {
     margin-top: 0px;
 }
+
+
+/* Mobile */
+@media only screen and (max-width: 750px) {
+    #tv_container {
+        max-width: 100dvw;
+    }
+}
