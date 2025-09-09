@@ -1,0 +1,101 @@
+#fourofour {
+    font-family: "Modern DOS 8x8";
+    font-size: 86px;
+
+    margin-bottom: -20px;
+    margin-top: -10px;
+}
+
+#desc {
+    margin-bottom: 10px;
+}
+
+
+/* TV */
+#tv_container {
+    position: relative;
+
+    width: 400px;
+    height: 380px;
+
+    margin: 20px;
+}
+
+#tv_container #content {
+    pointer-events: none;
+}
+
+
+#tv_container #content #game {
+    position: absolute;
+
+    width: calc(300px - 60px);
+    
+    top: 22px;
+
+    left: 50%;
+    transform: translateX(-50%);
+
+    filter: brightness(80%);
+}
+
+#tv_container #content #tv {
+    position: absolute;
+
+    width: 300px;
+
+    left: 50%;
+    transform: translateX(-50%);
+
+    filter: brightness(30%);
+}
+
+
+@keyframes tv_light_animation {
+    from {
+        opacity: 50%;
+    }
+    25% {
+        opacity: 35%;
+    }
+    50% {
+        opacity: 45%;
+    }
+    65% {
+        opacity: 30%;
+    }
+    100% {
+        opacity: 50%;
+    }
+}
+
+#tv_container #content #tv_light {
+    position: absolute;
+
+    width: 500px;
+
+    top: -120px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    animation: tv_light_animation 4s ease infinite;
+}
+
+
+#tv_container #content .chara {
+    position: absolute;
+
+    width: 500px;
+
+    top: -55px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#tv_container #content #chara.chara {
+    filter: brightness(30%);
+}
+
+#tv_container #content #chara_light.chara {
+    animation: tv_light_animation 4s ease infinite;
+}
