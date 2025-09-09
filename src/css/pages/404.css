@@ -17,10 +17,12 @@
 #tv_container {
     position: relative;
 
-    width: 400px;
-    height: 380px;
+    width: 500px;
+    height: 400px;
 
     margin: 20px;
+
+    overflow: clip;
 }
 
 #tv_container #content {
@@ -112,4 +114,9 @@
 
 #tv_container #content #chara_light.chara {
     animation: tv_light_animation 4s ease infinite;
+}
+
+
+#home_container {
+    margin-top: 0px;
 }
