@@ -214,6 +214,13 @@ css: me.css
             <div class="accordion_content">
                 <div id="interest_grid">
                     {% for interest in interest_category.interests %}
+                        {% if interest.bg_animated %}
+                        <script>
+                            var image = new Image();
+                            image.src = "/assets/images/interests/{{interest.id}}/bg_animated.gif";
+                        </script>
+                        {% endif %}
+
                         <style>
                             #interest_{{interest.id}} {
                                 background-image: url('/assets/images/interests/{{interest.id}}/bg.png');
