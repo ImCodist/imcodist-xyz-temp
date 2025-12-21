@@ -1,8 +1,6 @@
 // Import components.
 $("<script>", { src: "/js/components/accordion.js"}).appendTo("head");
 
-$("<script>", { src: "/js/includes/me.js"}).appendTo("head");
-
 
 // Variables.
 isBirthday = false;
@@ -35,6 +33,18 @@ $(function() {
         $(".birthday_hidden").show();
     } else {
         $(".birthday").removeClass("birthday");
+    }
+
+    // Special me behaviour I needed to fix.
+    if (isBirthday) {
+        $("#me_container #goober_container #goober").each(function() {
+            if ($(this).hasClass("left")) {
+                $(this).prop("src", "/assets/images/me/me_codist_birthday.gif")
+            }
+            if ($(this).hasClass("right")) {
+                $(this).prop("src", "/assets/images/me/me_fox_birthday.gif")
+            }
+        });
     }
 
     // Update age.
