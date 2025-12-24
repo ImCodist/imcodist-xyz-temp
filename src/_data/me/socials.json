@@ -6,13 +6,6 @@
         "contact_text": "Direct<br>Messages",
         "contact_hover": "Bluesky Direct Messages"
     },
-    "twitter": {
-        "icon": "twitter",
-        "name": "Twitter / X",
-        "href": "https://twitter.com/ImCodist",
-        "contact_text": "Direct<br>Messages",
-        "contact_hover": "Twitter / X Direct Messages (Unreliable)"
-    },
     "tumblr": {
         "icon": "tumblr",
         "name": "Tumblr",
