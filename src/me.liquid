@@ -216,6 +216,7 @@ css: me.css
                     {% for interest in interest_category.interests %}
                         {% if interest.bg_animated %}
                         <script>
+                            /* Preload the animated background for this interest. */
                             var image = new Image();
                             image.src = "/assets/images/interests/{{interest.id}}/bg_animated.gif";
                         </script>
@@ -294,24 +295,28 @@ css: me.css
     </div>
     <div id="container_content">
         <div id="content_socials">
-        {% for contact_social_id in me.misc.contact_socials %}
-            {% assign contact_data = me.socials[contact_social_id] %}
+        {% for social in me.socials %}
+            {% assign contact_data = me.socials[social[0]] %}
+            <script>
+                console.log("{{ contact_data }}");
+            </script>
+            {% if contact_data.contact_text %}
+                <a class="contact_button" id="contact_button_{{ contact_social_id }}" {% if contact_data.href %}href="{{ contact_data.href }}"{% endif %} {% if contact_data.contact_hover %}title="{{ contact_data.contact_hover }}{% if contact_data.copy %} (Copy){% endif %}"{% endif %}>
+                    <img src="/assets/images/icons/socials/{{ contact_data.icon }}.png">
+                    <div id="text">{{ contact_data.contact_text }}</div>
+                </a>
 
-            <a class="contact_button" id="contact_button_{{ contact_social_id }}" {% if contact_data.href %}href="{{ contact_data.href }}"{% endif %} {% if contact_data.contact_hover %}title="{{ contact_data.contact_hover }}{% if contact_data.copy %} (Copy){% endif %}"{% endif %}>
-                <img src="/assets/images/icons/socials/{{ contact_data.icon }}.png">
-                <div id="text">{{ contact_data.contact_text }}</div>
-            </a>
-
-            {% if contact_data.copy %}
-                <script>
-                    $("#contact_button_{{ contact_social_id }}").click(function() {
-                        confirmAndCopyToClipboard(
-                            `{{ contact_data.copy }}`,
-                            `{{ contact_data.copy_message }}`,
-                            `{{ contact_data.copy_confirm_message }}`
-                        );
-                    });
-                </script>
+                {% if contact_data.copy %}
+                    <script>
+                        $("#contact_button_{{ contact_social_id }}").click(function() {
+                            confirmAndCopyToClipboard(
+                                `{{ contact_data.copy }}`,
+                                `{{ contact_data.copy_message }}`,
+                                `{{ contact_data.copy_confirm_message }}`
+                            );
+                        });
+                    </script>
+                {% endif %}
             {% endif %}
         {% endfor %}
         </div>
